@@ -1,0 +1,118 @@
+# ==========================================
+# 1. DEPENDENCIES
+# ==========================================
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+
+# ==========================================
+# 2. ENVIRONMENT & SECRETS (BẢO VỆ TUYỆT ĐỐI)
+# ==========================================
+.env
+.env.*
+*.env
+*.env.*
+*.local
+frontend/.env*
+backend/.env*
+!.env.example
+!frontend/.env.example
+!backend/.env.example
+service-account*.json
+credentials*.json
+*.pem
+*.key
+*.cert
+
+# ==========================================
+# 3. AI AGENTS, TOOLS & PROMPTS
+# ==========================================
+.agent/
+.agents/
+.gemini/
+.claude/
+.cursor/
+.codex/
+.coordination/
+ai-logs/
+*.prompt.md
+AGENTS.md
+
+# ==========================================
+# 4. TÀI LIỆU TẠM & FOLDER LINH TINH
+# ==========================================
+[Ll]inh_[Tt]inh/
+[Ll]inh_[Tt]inh*
+scratch/
+temp/
+tmp/
+.backup/
+*.bak
+
+# ==========================================
+# 5. BUILD OUTPUTS & CACHE
+# ==========================================
+dist/
+dist-ssr/
+frontend/dist/
+backend/dist/
+.vite/
+frontend/.vite/
+*.tsbuildinfo
+.vercel/
+
+# ==========================================
+# 6. DATABASE DUMPS, BACKUPS & PRIVATE DATA
+# ==========================================
+*.sql.bak
+*.sql.gz
+*.sql.zip
+*.dump
+*.backup
+*.sqlite
+*.db
+/docs/DATABASE_DESIGN.md
+api/GHN_SETUP.md
+backend/src/database/*
+!backend/src/database/models/
+!backend/src/database/models/**
+
+# ==========================================
+# 7. LOGS
+# ==========================================
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# ==========================================
+# 8. TESTS & TEST ARTIFACTS
+# ==========================================
+tests/
+frontend/tests/
+backend/tests/
+test-results/
+playwright-report/
+coverage/
+scripts/e2e_*.cjs
+*.test.cjs
+*.test.js
+*.test.ts
+*.test.tsx
+*.spec.js
+*.spec.ts
+
+# ==========================================
+# 9. OS & EDITOR FILES
+# ==========================================
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
